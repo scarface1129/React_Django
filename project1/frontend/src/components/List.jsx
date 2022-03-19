@@ -1,13 +1,14 @@
 function List(props){
+  const{title,content,delection,id} = props
       function handleClick(){
-    props.deletion(props.id)
+    deletion(id)
   }
     return (
         <div className="note">
-          <h1 >  Title: {props.title} </h1>
-          <p > Content: {props.content}</p>
-          <button onClick={handleClick}>Delete</button>
-        </div>
+          <h1 >  Titles: {title} </h1>
+          <p > Content: {content}</p>
+{/*          <button onClick={handleClick}>Delete</button>
+*/}        </div>
     )
   }
 
